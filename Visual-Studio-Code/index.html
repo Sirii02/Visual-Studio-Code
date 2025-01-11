@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code</title>
+</head>
+<style>
+    .heading {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button:hover {
+        background-color: #eee3f6;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .search-bar {
+        display: flex;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        background-color: #9a84e2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .right-items {
+        display: flex;
+    }
+
+    li {
+        display: inline;
+        margin: 10px;
+        padding: 10px 0px 0px 10px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .download {
+        background-color: rgb(112, 112, 169);
+        padding: 15px;
+        color: white;
+        margin: 5px;
+    }
+
+    .copilot {
+        background-color: rgb(198, 198, 228);
+        padding: 15px;
+        color: rgb(67, 62, 62);
+        margin: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .openimage img {
+        height: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5%;
+    }
+
+    .play {
+        background-color: rgb(198, 198, 228);
+        padding: 15px;
+        color: rgb(67, 62, 62);
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .flex-container {
+        justify-items: center;
+    }
+
+    .flex-items {
+        border: 2px double black;
+        box-shadow: 10px;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 20px;
+        border: 2px double;
+        margin: 50px;
+        padding: 20px;
+        border-radius: 9px;
+        background-color: #e7c9eb;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .image-size img {
+        height: 400px;
+        width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 6%;
+
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    tr,
+    td {
+        border: 2px double black;
+        padding: 40px;
+    }
+
+    .tb-container {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        padding: 20px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 30px;
+        padding: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .container1 {
+        display: inline;
+    }
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-items: left;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 40px;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Extensions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+        </ul>
+        <div class="right-items">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..">
+            </div>
+            <button class="download-btn">Download</button>
+        </div>
+    </nav>
+    <p class="center">🚀 Get <a href="https://code.visualstudio.com/docs/copilot/setup-simplified">GitHub Copilot
+            Free</a> in VS Code!</p>
+    <h1 class="heading">Your code editor. <br> Redefined with AI.</h1>
+    <div class="buttons">
+        <button class="download">Download for macOS</button> <button class="copilot">Get Copilot Free</button>
+    </div>
+    <p class="center"><a href="https://vscode.dev/">Web</a>, <a href="https://code.visualstudio.com/insiders/">Insiders
+            edition</a>, or <a href="https://code.visualstudio.com/Download">other platforms</a></p>
+    <div class="openimage">
+        <img src="image1.png" alt="Main Image">
+    </div>
+    <div class="buttons">
+        <button class="play">Play</button>
+    </div>
+
+
+    <div class="flex-container">
+        <div class="flex-items">
+            <h3>Choose the model that works for you</h3>
+            <p>Pick the model that works best for your project and team, including GPT 4o and Claude Sonnet.</p>
+        </div>
+        <div class="flex-items">
+            <h3>An expert on your codebase</h3>
+            <p>Copilot locally indexes your codebase to understand what’s relevant and supplements that context to
+                interactions
+                with Copilot.</p>
+        </div>
+        <div class="flex-items">
+            <h3>Personalized to your needs</h3>
+            <p>Copilot works the way you do. Customize Copilot's prompts with details about your team's workflows,
+                tools,
+                and
+                projects.</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Activate Copilot Free in Visual Studio Code</h2>
+        <p>No trial. No credit card required. Just your GitHub account.</p>
+        <div class="buttons">
+            <button class="copilot">Get Copilot Free</a></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container1">
+            <h2>Create faster</h2>
+            <p>Describe what you want to build in natural language, and Copilot Edits takes care of the rest. Copilot
+                Edits
+                makes changes across files in your codebase with a UI designed for rapid iteration. It's the fastest way
+                to
+                add
+                new functionality to your apps.</p>
+            <a href="#">Build with Copilot Edits</a>
+
+            <p>Copilot Chat is an expert on your codebase, helping you to answer questions, explain code, and propose
+                fixes.
+                Chat is available wherever you need it - either as a dedicated sidebar panel or directly from within
+                your
+                code
+                so you can stay in context.</p>
+            <a href="#">Get answers from Copilot Chat</a>
+        </div>
+        <div class="image-size">
+            <img src="image2.png">
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="container1">
+            <h2>Code efficiently</h2>
+            <p>Copilot is your AI pair programmer infused directly into the editor. Just start typing, and Copilot will
+                complete
+                your thought by offering a completion on the current line or (sometimes) a whole new block of code. Just
+                like a
+                coworker, you have the flexibility to accept all, some, or none of Copilot's suggestions. Copilot
+                supports a
+                broad range of languages and frameworks.</p>
+            <a href="#">Pair program with Copilot</a>
+        </div>
+        <div class="image-size">
+            <img src="image1.png">
+        </div>
+    </div>
+
+
+
+    <div class="tb-container">
+        <div class="container2">
+            <div class="container1">
+                <h2>Code with Extensions</h2>
+                <p>Extensions let you customize VS Code and Copilot with AI-powered features grounded securely in your
+                    team's
+                    data
+                    and workflows. Grab one from the gallery and add it to chat like @azure, or <a href="#">build your
+                        own
+                        Copilot
+                        extension</a> to
+                    power your team's unique scenarios.</p>
+            </div>
+        </div>
+        <div class="container2">
+            <table>
+                <tr>
+                    <td>Python</td>
+                    <td>Stripe</td>
+                    <td>C/C++</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>GitLens</td>
+                    <td>C# Dev Kit</td>
+                </tr>
+                <tr>
+                    <td>MongoDB</td>
+                    <td>GitHub Copilot for Azure</td>
+                    <td>Remote Development</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="tb-container">
+        <div class="container2">
+            <div class="container1">
+                <h2>Code in any language</h2>
+                <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript,
+                    TypeScript,
+                    CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+            </div>
+        </div>
+        <div class="container2">
+            <table>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>TypeScript</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>C++</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>JSON</td>
+                    <td>PHP</td>
+                </tr>
+                <tr>
+                    <td>Markdown</td>
+                    <td>Powershell</td>
+                    <td>YAML</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <footer>
+
+        <a href="#">Support</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">License</a>
+
+    </footer>
+
+</body>
+
+</html>
